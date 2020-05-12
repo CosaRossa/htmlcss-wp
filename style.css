@@ -5,32 +5,28 @@
 }
 
 body {
-  background-image: url('img/wood.jpeg');
-  background-size: cover;
+  background-image: url('img/default-pattern.png');
+  background-size: contain;
   background-position: center;
 }
 
-/* Header */
-.layover {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
+#all {
+  width: 85%;
+  margin: 20px auto;
 }
 
-.layover:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
+/* Header */
 
 .intestazione {
   position: relative;
-  height: 240px;
-  background-image: url('img/forest.jpeg');
+  height: 220px;
+  background-image: url('img/bosco.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
   text-align: center;
-  border: 9px solid white;
+  border: 11px solid white;
 }
 
 .testo{
@@ -38,6 +34,15 @@ body {
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
+}
+
+.testo h1 {
+  font-size: 50px;
+}
+
+.testo p {
+  font-weight: 300;
+  font-size: 20px;
 }
 
 /* navbar */
@@ -50,16 +55,17 @@ nav {
 
 nav ul {
   position: absolute;
-  left: 47%;
+  left: 50%;
   transform: translateX(-50%);
   padding-inline-start: 0px;
+  display: block;
 }
 
 nav li {
   display: inline-block;
   padding: 12px 20px;
   text-shadow: 1px 1px #000;
-  font-weight: 200;
+  font-weight: 300;
   border-left: 1px solid #eee;
   border-right: 1px solid #222;
 }
@@ -76,42 +82,78 @@ nav li:hover {
   background-color:rgb(45, 40, 42)
 }
 
-/* Main */
-#all {
-  width: 70%;
-  margin: 20px auto;
-}
+/* Parte principale */
 
 .clearfix {
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 /* Colonne generale */
 .column {
   float: left;
-  width: 25%;
+  width: 22%;
 }
 
 /* Colonna sx */
 .left {
-  height: 320px;
-  background-color: pink;
+  padding: 25px;
+  background-color: #eee;
+  color: rgb(65, 60, 62);
+  border-radius: 5px;
+}
+
+.left h3 {
+  margin: 0 7px 9px 0;
+}
+
+.left a {
+  display: block;
+  color: darkgreen;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.left a:hover {
+  text-decoration: underline;
 }
 
 /* Colonna dx */
-article {
-  height: 200px;
-  background-color: pink;
+.right article {
+  background-color: #eee;
+  color: rgb(65, 60, 62);
+  border-radius: 5px;
+  padding: 25px;
   margin-bottom: 20px;
+}
+
+.right h3 {
+  margin: 0 7px 7px 0;
+}
+
+.right p {
+  font-weight: 300;
 }
 
 /* Centrale */
 .main {
   float: left;
-  width: 42%;
-  height: 480px;
-  background-color: purple;
-  margin: 0 4%;
+  width: 52%;
+  margin: 0 2%;
+  background-color: #eee;
+  color: rgb(65, 60, 62);
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.main h2 {
+  font-size: 35px;
+  text-shadow: 3px 3px #ccc;
+  margin: 7px;
+}
+
+.main p {
+  margin: 7px 0;
+  font-weight: 300;
 }
 
 .clearfix::after {
@@ -122,6 +164,39 @@ article {
 
 /* Fondo pagina */
 footer {
-  height: 70px;
-  background-color: lightblue;
+  background-color: #eee;
+  color: rgb(130, 120, 124);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+footer .social {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+footer .fb {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+
+footer .ig {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,);
+}
+
+footer .gh {
+  position: absolute;
+  right: 30%;
+  top: 50%;
+}
+
+footer .autore {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid rgb(65, 60, 62);
+  padding-bottom: 8px;
 }
